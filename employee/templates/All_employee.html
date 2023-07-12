@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"Employee List"</title>
+</head>
+<body>
+<p><a href = "/">Home</a> </p>
+<h1> Employee</h1>
+<ul>
+    {%for x in myemployee%}
+    <li><a href = "details/{{x.first_name}}"> {{x.first_name}} {{x.last_name}}</a></li>
+    {% endfor%}
+</ul>
+<p> Back to <a href = "/employee">Employee</a> </p>
+</body>
+</html>
